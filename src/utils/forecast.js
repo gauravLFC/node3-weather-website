@@ -11,8 +11,9 @@ const forecast = (latitude, longitude,callback) => {
         }
         else{
             callback(undefined,
-                response.body.daily.data[0].summary+" It is currently "+response.body.currently.temperature+" degrees out with "+response.body.currently.precipProbability+"% chance of rain");
-            
+                response.body.daily.data[0].summary+" It is currently "+response.body.currently.temperature+" degrees out with "
+                +response.body.currently.precipProbability+"% chance of rain. High today is "+response.body.daily.data[0].temperatureHigh
+                +" degrees with a low of "+response.body.daily.data[0].temperatureLow+" degrees");
         }
     })
 }
