@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/weather?address=';
+const url = '/weather?address=';
 
 
 
